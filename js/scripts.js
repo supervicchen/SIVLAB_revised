@@ -30,6 +30,21 @@
         }
     });
 
+    //Click button to switch en/cn version
+    var btn_version1 = document.getElementById("btn_version1");
+    function versionswitch1(){
+        window.open('index_cn.html','_self');
+    }
+    btn_version1.onclick = versionswitch1;
+    //btn_version1.onClick = null;
+    
+    var btn_version2 = document.getElementById("btn_version2");
+    function versionswitch2(){
+        window.open('index.html','_self');
+    }
+    btn_version2.onclick = versionswitch2;
+    //btn_version1.onClick = null;
+
     // Closes responsive menu when a scroll trigger link is clicked
     $(".js-scroll-trigger").click(function () {
         $(".navbar-collapse").collapse("hide");
